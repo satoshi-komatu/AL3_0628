@@ -8,6 +8,7 @@
 #include "ViewProjection.h"
 #include "WorldTransform.h"
 #include "DebugCamera.h"
+#include "Skydome.h"
 
 
 #include <vector>
@@ -48,6 +49,7 @@ private: // メンバ変数
 	Input* input_ = nullptr;
 	Audio* audio_ = nullptr;
 
+
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
@@ -60,4 +62,7 @@ private: // メンバ変数
 	Matrix4x4 cameraMarix_;
 	Model* modelBlock_ = nullptr;
 	std::vector<std::vector<WorldTransform*>> worldTransformBlocks_;
+	Model* modelSkydome_ = nullptr;
+	Skydome* skydome_ = nullptr;
+	WorldTransform worldTransform_;
 };

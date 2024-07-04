@@ -107,12 +107,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2d\ImGuiManager.cpp" />
+    <ClCompile Include="3d\Model.cpp" />
     <ClCompile Include="3d\WorldTransform.cpp" />
     <ClCompile Include="base\DirectXCommon.cpp" />
     <ClCompile Include="base\WinApp.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="math\MyMath\MatrixMath.cpp" />
     <ClCompile Include="scene\GameScene.cpp" />
+    <ClCompile Include="Skydome.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2d\ImGuiManager.h" />
@@ -145,6 +147,7 @@
     <ClInclude Include="math\Vector3.h" />
     <ClInclude Include="math\Vector4.h" />
     <ClInclude Include="scene\GameScene.h" />
+    <ClInclude Include="Skydome.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\shaders\TerrainPS.hlsl">

@@ -17,6 +17,8 @@ GameScene::~GameScene() {
 	}
 	worldTransformBlocks_.clear();
 	delete debugCamera_;
+	delete modelSkydome_;
+
 }
 	
 
@@ -25,6 +27,8 @@ GameScene::~GameScene() {
 		dxCommon_ = DirectXCommon::GetInstance();
 		input_ = Input::GetInstance();
 		audio_ = Audio::GetInstance();
+	    modelSkydome_ = Model::CreateFromOBJ("sphere", true);
+	    modelBlock_ = Model::Create();
 
 		//カメラの生成
 		debugCamera_ = new DebugCamera(WinApp::kWindowWidth, WinApp::kWindowHeight);
@@ -63,7 +67,7 @@ GameScene::~GameScene() {
 		}
 
 		viewProjection_.Initialize();
-		modelBlock_ = Model::Create();
+	    worldTransform_.Initialize();
 	}
 
 	void GameScene::Update() {
@@ -128,11 +132,15 @@ GameScene::~GameScene() {
 		/// ここに3Dオブジェクトの描画処理を追加できる
 		/// </summary>
 	
+		
 		for (std::vector<WorldTransform*>& worldTransformBlockLine : worldTransformBlocks_) {
 			for (WorldTransform* worldTransformBlock : worldTransformBlockLine) {
 				modelBlock_->Draw(*worldTransformBlock, viewProjection_);
 			}
 		}
+		
+		modelSkydome_->Draw(worldTransform_, viewProjection_);
+
 
 		// 3Dオブジェクト描画後処理
 		Model::PostDraw();
