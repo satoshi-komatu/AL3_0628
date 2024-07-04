@@ -1,18 +1,1 @@
-﻿  compilation object save succeeded; see C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\TerrainPS.cso
-  compilation object save succeeded; see C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\TerrainVS.cso
-  compilation object save succeeded; see C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\ObjPS.cso
-  compilation object save succeeded; see C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\ObjVS.cso
-  compilation object save succeeded; see C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\PrimitivePS.cso
-  compilation object save succeeded; see C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\PrimitiveVS.cso
-  compilation object save succeeded; see C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\ShapePS.cso
-  compilation object save succeeded; see C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\ShapeVS.cso
-  compilation object save succeeded; see C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\SpritePS.cso
-  compilation object save succeeded; see C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\SpriteVS.cso
-  ImGuiManager.cpp
-  WorldTransform.cpp
-  DirectXCommon.cpp
-  WinApp.cpp
-  main.cpp
-  MatrixMath.cpp
-  GameScene.cpp
-  DirectXGame.vcxproj -> C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\DirectXGame.exe
+﻿  DirectXGame.vcxproj -> C:\Users\satos\OneDrive\デスクトップ\AL3_0628\Generated\Outputs\Debug\DirectXGame.exe
