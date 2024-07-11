@@ -66,6 +66,8 @@ GameScene::~GameScene() {
 			}
 		}
 
+		mapChipField_ = new MapChipField();
+
 		viewProjection_.Initialize();
 	    worldTransform_.Initialize();
 	}

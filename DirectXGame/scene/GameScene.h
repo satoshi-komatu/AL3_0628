@@ -5,6 +5,7 @@
 #include "Input.h"
 #include "Model.h"
 #include "Sprite.h"
+#include "MapChipField.h"
 #include "ViewProjection.h"
 #include "WorldTransform.h"
 #include "DebugCamera.h"
@@ -65,4 +66,5 @@ private: // メンバ変数
 	Model* modelSkydome_ = nullptr;
 	Skydome* skydome_ = nullptr;
 	WorldTransform worldTransform_;
+	MapChipField* mapChipField_;
 };
