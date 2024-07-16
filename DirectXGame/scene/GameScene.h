@@ -5,6 +5,7 @@
 #include "Input.h"
 #include "Model.h"
 #include "Sprite.h"
+#include "Player.h"
 #include "MapChipField.h"
 #include "ViewProjection.h"
 #include "WorldTransform.h"
@@ -57,14 +58,22 @@ private: // メンバ変数
 	
 	ViewProjection viewProjection_;
 
+	uint32_t textureHandle_ = 0u;
+
+	Player* player_ = nullptr;
+
+
 	Sprite sprite_;
 	bool isDebugCameraActive_ = false;
 	DebugCamera* debugCamera_ = nullptr;
 	Matrix4x4 cameraMarix_;
+	Model* modelPlayer_ = nullptr;
 	Model* modelBlock_ = nullptr;
 	std::vector<std::vector<WorldTransform*>> worldTransformBlocks_;
 	Model* modelSkydome_ = nullptr;
 	Skydome* skydome_ = nullptr;
 	WorldTransform worldTransform_;
 	MapChipField* mapChipField_;
+
+	void GenerateBlocks();
 };
